@@ -77,3 +77,48 @@ if (typeof gsap !== 'undefined') {
         stagger: 0.4
     });
 }
+
+/*----------------------------------------------------*/
+/* Scroll Reveal Animations for Service Cards
+------------------------------------------------------ */
+
+function revealOnScroll() {
+    const cards = document.querySelectorAll('.service-card');
+    const contactItems = document.querySelectorAll('.contact-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 150);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+
+    contactItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(item);
+    });
+}
+
+// Initialize scroll reveal when DOM is loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', revealOnScroll);
+} else {
+    revealOnScroll();
+}
