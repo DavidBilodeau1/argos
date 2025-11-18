@@ -1,6 +1,16 @@
 # Argos Détection - Site Web
 
-Site web professionnel pour Argos Détection, expert en tests d'intrusion et cybersécurité.
+Site web professionnel pour Argos Détection, expert en tests d'intrusion et cybersécurité pour l'industrie.
+
+## 🎨 Design
+
+Design moderne et professionnel avec:
+- Palette de couleurs industrielle (bleu foncé, gris, or)
+- Hero section avec gradient et animations
+- Navigation sticky qui apparaît au scroll
+- Sections de services avec cartes interactives
+- Design 100% responsive (mobile, tablette, desktop)
+- Animations fluides avec GSAP
 
 ## 🚀 Déploiement Rapide
 
@@ -15,7 +25,7 @@ Site web professionnel pour Argos Détection, expert en tests d'intrusion et cyb
 
 2. **Pousser vers GitHub:**
    ```bash
-   git remote add origin https://github.com/VOTRE-USERNAME/argos-detection.git
+   git remote add origin https://github.com/VOTRE-USERNAME/argos.git
    git branch -M main
    git push -u origin main
    ```
@@ -23,7 +33,7 @@ Site web professionnel pour Argos Détection, expert en tests d'intrusion et cyb
 3. **Activer GitHub Pages:**
    - Allez dans Settings > Pages
    - Source: "GitHub Actions"
-   - Le site sera automatiquement déployé à: `https://VOTRE-USERNAME.github.io/argos-detection/`
+   - Le site sera automatiquement déployé à: `https://VOTRE-USERNAME.github.io/argos/`
 
 ### Option 2: Netlify (Alternative - Gratuit)
 
@@ -50,8 +60,8 @@ vercel --prod
 ```
 argos/
 ├── index.html          # Page principale
-├── styles.css          # Styles CSS
-├── script.js           # JavaScript
+├── styles.css          # Styles CSS avec variables de couleurs
+├── script.js           # JavaScript (vanilla, pas de jQuery)
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml  # Configuration GitHub Actions
@@ -61,21 +71,33 @@ argos/
 ## 🎨 Personnalisation
 
 ### Ajouter votre logo:
-Remplacez la section logo dans `index.html` (ligne ~13):
+Remplacez la section logo dans `index.html` (ligne ~32):
 ```html
-<div class="logo-placeholder">
-    <img src="votre-logo.png" alt="Argos Détection" height="50">
+<div class="logo-circle">
+    <img src="votre-logo.png" alt="Argos" style="width: 60px; height: 60px;">
 </div>
 ```
 
 ### Modifier les couleurs:
-Éditez les variables CSS dans `styles.css` (lignes 8-16):
+Éditez les variables CSS dans `styles.css` (lignes 4-15):
 ```css
 :root {
-    --primary-dark: #1a2332;
-    --accent-gold: #d4af37;
-    /* ... */
+    --primary-dark: #1a2332;      /* Bleu foncé principal */
+    --primary-blue: #2c3e50;      /* Bleu secondaire */
+    --accent-blue: #3498db;       /* Bleu accent */
+    --accent-gold: #d4af37;       /* Or (accent principal) */
+    --text-light: #ecf0f1;        /* Texte clair */
+    --text-dark: #2c3e50;         /* Texte foncé */
+    --text-gray: #7f8c8d;         /* Texte gris */
+    --background-light: #f8f9fa;  /* Fond clair */
+    --background-dark: #0f1419;   /* Fond foncé */
 }
+```
+
+### Modifier la phrase d'accroche:
+Dans `index.html`, ligne ~37:
+```html
+<h2 class="heading">Une Faille Coûte Cher. La Prévention Paie.</h2>
 ```
 
 ## 🌐 Domaine Personnalisé
@@ -92,9 +114,14 @@ Pour utiliser votre propre domaine (ex: argosdetection.com):
 ## 📱 Technologies Utilisées
 
 - HTML5
-- CSS3 (avec variables CSS et Grid/Flexbox)
-- JavaScript Vanilla (pas de dépendances)
+- CSS3 (avec variables CSS, Grid, Flexbox)
+- JavaScript Vanilla (pas de jQuery requis)
+- GSAP pour les animations (chargé via CDN)
 - GitHub Actions pour le déploiement automatique
+
+## 🖥️ Tester Localement
+
+Ouvrez simplement `index.html` dans votre navigateur. Aucun serveur local requis!
 
 ## 📞 Contact
 

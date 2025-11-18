@@ -7,115 +7,128 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+
+<!-- Header Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<header id="header">
+    <div class="main_nav">
         <div class="container">
-            <div class="logo">
-                <div class="logo-placeholder">
-                    <!-- Logo will go here -->
-                    <span class="logo-text">ARGOS DÉTECTION</span>
-                </div>
+            <div class="logo-nav">ARGOS DÉTECTION</div>
+            <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+            <nav>
+                <ul>
+                    <li><a class="smoothscroll" href="#header">Accueil</a></li>
+                    <li><a class="smoothscroll" href="#services">Services</a></li>
+                    <li><a class="smoothscroll" href="#contact">Contact</a></li>
+                    <li><a class="cta-nav smoothscroll" href="mailto:davidbilodeau1@hotmail.com?subject=Demande de consultation - Argos Détection">Planifier une consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="title">
+        <div class="logo-placeholder heading">
+            <!-- Logo Argos guard dog will go here -->
+            <div class="logo-circle">🛡️</div>
+        </div>
+        <div class="smallsep heading"></div>
+        <h1 class="heading">ARGOS DÉTECTION</h1>
+        <h2 class="heading">Une Faille Coûte Cher. La Prévention Paie.</h2>
+        <p class="hero-description heading">Expert en tests d'intrusion et cybersécurité pour l'industrie</p>
+    </div>
+    <a class="smoothscroll" href="#services">
+        <div class="scroll-down"></div>
+    </a>
+</header>
+
+<!-- Services Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="services">
+    <div class="container">
+        <h1>Nos Services</h1>
+        <div class="block"></div>
+        <p class="section-intro">Protégez votre infrastructure avec des solutions de cybersécurité adaptées aux environnements industriels</p>
+
+        <div class="row services-row">
+            <div class="one-third column service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Tests d'Intrusion</h3>
+                <ul class="service-list">
+                    <li>Tests d'intrusion réseau</li>
+                    <li>Tests d'intrusion physiques</li>
+                    <li>Tests d'intrusion logiciel</li>
+                </ul>
+                <p>Évaluation complète de vos défenses pour identifier les vulnérabilités avant qu'elles ne soient exploitées.</p>
             </div>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-                <a href="mailto:davidbilodeau1@hotmail.com?subject=Demande de consultation - Argos Détection" class="cta-button">Planifier une consultation</a>
+            <div class="one-third column service-card">
+                <div class="service-icon">📊</div>
+                <h3>Conseil & Analyse</h3>
+                <ul class="service-list">
+                    <li>Analyses de risques</li>
+                    <li>Conseils en cybersécurité</li>
+                </ul>
+                <p>Stratégies personnalisées pour renforcer votre posture de sécurité et gérer les risques cyber.</p>
+            </div>
+            <div class="one-third column service-card">
+                <div class="service-icon">🎓</div>
+                <h3>Formation & Sensibilisation</h3>
+                <ul class="service-list">
+                    <li>Formations techniques</li>
+                    <li>Sensibilisation du personnel</li>
+                    <li>Simulations de hameçonnage</li>
+                    <li>Simulations d'attaque</li>
+                </ul>
+                <p>Renforcez la vigilance de vos équipes face aux menaces cyber modernes.</p>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Protégez Votre Infrastructure</h1>
-                <p class="hero-subtitle">Expert en tests d'intrusion et cybersécurité pour l'industrie</p>
-                <p class="hero-description">Argos Détection vous accompagne dans la sécurisation de vos systèmes critiques avec des solutions adaptées aux environnements industriels.</p>
-                <a href="#services" class="hero-cta">Découvrir nos services</a>
+<!-- Contact Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<section id="contact">
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <div class="block"></div>
+        <p class="section-intro">Prêt à sécuriser votre infrastructure ? Discutons de vos besoins.</p>
+
+        <div class="contact-info-grid">
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <h4>Email</h4>
+                <a href="mailto:davidbilodeau1@hotmail.com">davidbilodeau1@hotmail.com</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <h4>Téléphone</h4>
+                <a href="tel:+15812354178">581-235-4178</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">💼</div>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/davidbilodeau1/" target="_blank" rel="noopener">davidbilodeau1</a>
             </div>
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Nos Services</h2>
-            
-            <div class="services-grid">
-                <!-- Tests d'intrusion -->
-                <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Tests d'Intrusion</h3>
-                    <ul class="service-list">
-                        <li>Tests d'intrusion réseau</li>
-                        <li>Tests d'intrusion physiques</li>
-                        <li>Tests d'intrusion logiciel</li>
-                    </ul>
-                    <p class="service-description">Évaluation complète de vos défenses pour identifier les vulnérabilités avant qu'elles ne soient exploitées.</p>
-                </div>
-
-                <!-- Conseil -->
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Conseil & Analyse</h3>
-                    <ul class="service-list">
-                        <li>Analyses de risques</li>
-                        <li>Conseils en cybersécurité</li>
-                    </ul>
-                    <p class="service-description">Stratégies personnalisées pour renforcer votre posture de sécurité et gérer les risques cyber.</p>
-                </div>
-
-                <!-- Formation -->
-                <div class="service-card">
-                    <div class="service-icon">🎓</div>
-                    <h3>Formation & Sensibilisation</h3>
-                    <ul class="service-list">
-                        <li>Formations techniques</li>
-                        <li>Sensibilisation du personnel</li>
-                        <li>Simulations de hameçonnage</li>
-                        <li>Simulations d'attaque</li>
-                    </ul>
-                    <p class="service-description">Renforcez la vigilance de vos équipes face aux menaces cyber modernes.</p>
-                </div>
-            </div>
+        <div class="cta-section">
+            <a href="mailto:davidbilodeau1@hotmail.com?subject=Demande de consultation - Argos Détection" class="cta-button-large">Planifier une consultation</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contactez-nous</h2>
-            <p class="contact-intro">Prêt à sécuriser votre infrastructure ? Discutons de vos besoins.</p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-icon">📧</span>
-                    <a href="mailto:davidbilodeau1@hotmail.com">davidbilodeau1@hotmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📱</span>
-                    <a href="tel:+15812354178">581-235-4178</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">💼</span>
-                    <a href="https://www.linkedin.com/in/davidbilodeau1/" target="_blank" rel="noopener">LinkedIn</a>
-                </div>
-            </div>
+<!-- Footer Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-            <div class="cta-section">
-                <a href="mailto:davidbilodeau1@hotmail.com?subject=Demande de consultation - Argos Détection" class="cta-button-large">Planifier une consultation</a>
-            </div>
-        </div>
-    </section>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Argos Détection. Tous droits réservés.</p>
+    </div>
+</footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Argos Détection. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
